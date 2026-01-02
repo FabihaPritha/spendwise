@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:spendwise/core/common/styles/global_text_style.dart';
-import 'package:spendwise/core/utils/app_colors.dart';
+import 'package:spendwise/core/utils/constants/app_colors.dart';
 
 class CustomTextField extends StatefulWidget {
   final String? labelText;

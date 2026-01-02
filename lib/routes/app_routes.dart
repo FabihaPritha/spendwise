@@ -1,25 +1,15 @@
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:spendwise/features/splash_screen/view/splash_view.dart';
-
 class AppRoutes {
-  //Route Path Constants
-  static const String splashView = '/';
+  // Prevent instantiation
+  AppRoutes._();
+  
+  // Route Path Constants
+  static const String splash = '/';
+  static const String home = '/home';
+  static const String login = '/login';
 
-  //Route getter methods
-  static String getSplashView() => splashView;
-
-  //GoRouter Configuration
-  static final GoRouter router = GoRouter(
-    initialLocation: splashView,
-    routes: [
-      GoRoute(
-        path: splashView,
-        name: 'SplashView',
-        builder: (BuildContext context, GoRouterState state) {
-          return const SplashView();
-        },
-      ),
-    ]
-  );
+  
+  // Route getter methods (optional, for consistency)
+  static String getSplashView() => splash;
+  static String getHomeView() => home;
+  static String getLoginView() => login;
 }
